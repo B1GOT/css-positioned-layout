@@ -1,1 +1,133 @@
-/* Start coding here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chat-container {
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    
+}
+
+.header {
+    background: gray;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.chat-box {
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items:flex-end; */
+    justify-content: right;
+    gap: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+.message-1 {
+    padding: 15px;
+    position: relative;
+    border-radius: 20px;
+    max-width: 60%;
+    align-self: flex-end;
+    border-radius: 20px;
+    padding: 1%;
+    background: #4CAF50;
+    
+    
+}
+.box{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    box-shadow:10px 10px #4CAF50;
+    bottom: 30px;
+    right: 0;
+    border-radius: 280px;
+    justify-content: flex-end;
+    transform: rotate(20deg);
+
+    
+}
+
+.message-2 {
+    position: relative;
+    background: gray;
+    color: white;
+    align-self: flex-end;
+    border-radius: 20px;
+    padding: 1%;
+    justify-content: end;
+}
+.label{
+
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background-color: rgb(194, 186, 186);
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 5px;
+    justify-content: end;
+}
+
+.message-3 {
+    background: #4CAF50;
+    color: black;
+    align-self: flex-end;
+    border-radius: 20px;
+    padding: 1%;
+    justify-content: end;
+}
+
+.emoji-left {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 40px;
+    background: #ddd;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.emoji-1{
+    align-self: flex-start;
+    padding: 20px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 24px;
+    background-color: gray;
+   
+}
+.emoji-2 {
+    align-self: flex-start;
+    
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 24px;
+    background-color: gray;
+    /* color: white; */
+}
+.item{
+   min-width: 100px;
+}

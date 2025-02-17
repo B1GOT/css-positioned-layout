@@ -1,5 +1,48 @@
-body {
-  font-family: "Kanit";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Start coding here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.card {
+  position: relative;
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  background: lightgray;
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+  
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-align: left;
+}
