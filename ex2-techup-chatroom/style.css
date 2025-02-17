@@ -1,1 +1,73 @@
-/* Start coding here */
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    font-size: 2rem;
+}
+.container {
+    padding: 20px;
+    margin-top: 10px;
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 300px;
+    position: relative;
+}
+
+.emoji {
+    background-color: gray;
+    align-self: flex-start;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.message.received {
+    background-color: gray;
+    align-self: flex-end;
+    color: white;
+    width: 150px;
+}
+.message.sent {
+    background-color: rgb(58, 207, 58);
+    color: white;
+    align-self: flex-end;
+    width: 150px;
+}
+.message.sent::after {
+    /* content: ''; */
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    width: 80;
+    height: 80;
+    transform: rotate(400deg);
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 blue;
+    /* border-left: 10px solid rgb(58, 207, 58); */
+    /* border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; */
+}
+.delete-button {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    background: lightgray;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
